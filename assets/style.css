@@ -195,6 +195,19 @@ li:hover {
 	padding: 0;
 }
 
+.js-modal-back {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.js-modal-back img {
+    display: block;
+    width: 21px;
+    height: 21px;
+}
+
 .js-modal-close {
     position: absolute;
     top: 20px;
