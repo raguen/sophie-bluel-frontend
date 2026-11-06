@@ -53,6 +53,7 @@ function afficherGalerieModale() {
     }
 }
 
+// Gestion de l'ouverture et de la fermeture de la modale
 const openModal = function (e) {
     e.preventDefault()
     modal = document.querySelector(e.currentTarget.getAttribute('href'))
@@ -67,6 +68,7 @@ const openModal = function (e) {
     modal.setAttribute('aria-modal', 'true');
 }
 
+// Gestion de la fermeture de la modale
 const closeModal = function (e) {
     if (modal === null) return
     e.preventDefault()
@@ -86,6 +88,7 @@ const closeModal = function (e) {
     modal = null
 }
 
+// Empêche la propagation de l'événement de clic pour éviter la fermeture de la modale lorsque l'on clique à l'intérieur
 const stopPropagation = function (e) {
     e.stopPropagation()
 }
